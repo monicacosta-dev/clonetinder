@@ -12,4 +12,4 @@
  - https://cssgradient.io/
 
 
- <img src="" /> 
+ <img src="https://github.com/monicacosta-dev/clonetinder/blob/main/img/clone.PNG"/> 
