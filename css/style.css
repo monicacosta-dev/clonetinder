@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f5f7fa;
+    height: 100vh;
+    width: 100;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px 0;
+    height: 44px;
+    cursor: pointer;
+}
+
+.navbar i{
+    font-size: 1.5rem;
+    color: #dadfe6;
+}
+
+.navbar i:nth-child(1){
+    color: #fe466d
+}
+
+.photo-and-actions{
+    height:calc(100vh - 44px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo{
+    display: flex;
+    align-items: flex-end;
+    width: 98vw;
+    height: 85vh;
+    background: url('../img/homem01.jpg')center center/cover;
+    border-radius: 10px;
+    color: #eee;
+    box-shadow: 0 2px 0  rgba(136, 136, 136, 0.77);
+}
+
+.photo-text{
+    padding: 15px;
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+                180deg, 
+                rgba(2, 0, 36, 1) 0%, 
+                rgba(35, 34, 65, 0) 0%, 
+                rgba(0, 0, 0, 0.7) 52%
+    );
+    border-radius: 10px;
+}
+
+.photo-name-and-age{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 1.4rem;
+}
+.photo-name-and-age h2:nth-child(2){
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.photo-bio{
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.actions{
+    display: flex;
+    flex: auto;
+    align-items: center; 
+    
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 2px  0 rgba(112, 125, 134, 0.14);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: transform 500ms ease;
+ }
+
+ .action:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+ }
+ .actions .action:nth-child(1){
+    color: #fe466d
+ }
+ .actions .action:nth-child(2){
+    margin: 0 1rem;
+    color: #2db1ff;
+    width: 48px;
+    height: 48px;
+    font-size: 1.rem;
+ }
+
+ .actions .action:nth-child(3){
+    color: #000
+ }
+
+ /*Trabalhando a responsividade*/
+
+ @media (min-width: 1025px) {
+    body{
+        background: #f5f7fa;
+    }
+    .photo{
+        width: 367px;
+        height: 684px;
+    }
+    .navbar{
+        width: 400px;
+        margin: auto;
+    }
+ }
